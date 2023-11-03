@@ -1,12 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-    
-<meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="PLACIDE NTEZIRYAYO" content="">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
@@ -75,9 +69,10 @@
 <!-- Lodash: Utility Library -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"></script>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<!-- Include FontAwesome for icons -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Include FontAwesome for icons -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 
 
@@ -90,30 +85,28 @@
     <title>HOME</title>
 </head>
 <body>
-
-
-<div class="container-fluid">
-    <div class="row">
-        <!-- Sidebar -->
-          <div class="col-md-3 d-none d-md-block" style="background-color: #6D5B6D;">
+<div class="wrapper">
+    <div class="body-overlay"></div>
+    <!-- Sidebar -->
     <div id="sidebar">
-                <h3>
-                    <img src="img/chatter2.jpg" class="img-fluid" style="width: 49px; border-radius: 50%;"> <span>URUGERO</span>
-                </h3>
-            </div>
-            <ul class="list-unstyled components m-0">
-                <li class="active">
-                    <a href="#" class="dashboard"><i class="material-icons">dashboard</i> Dashboard</a>
-                </li>
-                <li class="dropdown">
-                    <a href="#homeSubmenu1" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="material-icons">aspect_ratio</i> Layouts</a>
-                    <ul class="collapse list-unstyled menu" id="homeSubmenu1">
-                        <li><a href="#">Layouts1</li>
-                        <li><a href="#">Layouts2</li>
-                        <li><a href="#">Layouts3</li>
-                    </ul>
-                </li>
-                <li class="dropdown">
+        <div class="sidebar-header">
+            <h3>
+                <img src="img/chatter2.jpg" class="img-fluid"> <span>URUGERO</span>
+            </h3>
+        </div>
+            <ul class="list-unstyled component m-0">
+      <li class="active">
+        <a href="#" class="dashboard"><i class="material-icons">dashboard </i> Dashboard</a>
+      </li>
+      <li class="dropdown">
+        <a href="#homeSubmenu1" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="material-icons">aspect_ratio</i> Layouts</a>
+        <ul class="collapse list-unstyled menu" id="homeSubmenu1">
+          <li><a href="#" >Layouts1</li>
+          <li><a href="#" >Layouts2</li>
+          <li><a href="#" >Layouts3</li>
+        </ul>
+      </li>
+      <li class="dropdown">
         <a href="#homeSubmenu1" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="material-icons">apps</i> Widgets</a>
         <ul class="collapse list-unstyled menu" id="homeSubmenu1">
           <li><a href="#" >Apps1</li>
@@ -173,26 +166,33 @@
         </ul>
     </div>
 
+    <!---- side bar close---->
 
-   <div class="col-md-9 col-sm-12" id="content">
-            <!-- Top Navbar -->
-            <nav class="navbar navbar-expand-lg navbar-light"  style="background-color: #6D5B6D;">
-                <div class="col-2 col-md-1 col-lg-1 order-2 order-md-1 align-self-center">
-                    <div class="xp-menubar">
-                        <span class="material-icons text-white">signal_cellular_alt</span>
-                    </div>
-                </div>
-                <div class="col-md-5 col-lg-2 order-3 order-md-2">
-                    <div class="xp-searchbar">
-                        <form>
-                            <div class="input-group">
-                                <input type="search" class="form-control" name="search" placeholder="search">
-                                <div class="input-group-append">
-                                    <button class="btn" type="submit" id="button-addon2">Go</button>
-                                </div>
+    <!---- page start---->
+    <div id="content">
+        <!---- Top Nav bar---->
+        <div class="top-navbar">
+            <div class="xd-topbar">
+                <div class="row">
+                    <div class="col-2 col-md-1 col-lg-1 order-2 order-md-1 align-self-center">
+                        <div class="xp-menubar">
+                            <span class="material-icons text-white">signal_cellular_alt</span>
+                        </div>
+                       
+                    </div>  
+                     <div class="col-md-5 col-lg-2 order-3 order-md-2">
+                            <div class="xp-searchbar">
+                                <form>
+                                    <div class="input-group">
+                                        <input type="search"class="form-control"
+                                        name="search" placeholder="search">
+                                        <div class="input-group-append">
+                                            <button class="btn" type="submit" id="button-addon2">Go</button>
+                                        </div>
+                                        
+                                    </div>
+                                </form>
                             </div>
-                        </form>
-                          </div>
                             
                         </div>  
                          <div class="col-10 col-md-6 col-lg-8 order-1 order-md-3">
@@ -236,41 +236,133 @@
                                         </li>
                                     </ul>
                                 </nav>
+                            </div>
+                            
+                        </div>
+                </div>
 
-</div>
-    </div>
-  </nav>
-
-  <div class="table-responsive">
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <th>#</th>
-                            <th>Column 1</th>
-                            <th>Column 2</th>
-                            <th>Column 3</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>Data 1</td>
-                            <td>Data 2</td>
-                            <td>Data 3</td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>Data 4</td>
-                            <td>Data 5</td>
-                            <td>Data 6</td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div class="xp-breadcrumbbar text-center">
+                    <h4 class="page-title">Dashboard</h4>
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"> <a href="#">URUGERO</a></li>
+                        <li class="breadcrumb-item active" aria-curent="page"> DASHBOARD</li>
+                     </ol>
+                </div>
             </div>
-        </div>
+       </div>
+       <!---- Main content---->
+       <div class="main-content">
+           <div class="row">
+               <div class="col-md-12">
+                   <div class="table-wrapper">
+                       <div class="table-title">
+                           <div class="row">
+                               <div class="col-sm-6 p-0 flex justify-content-lg-start justify-content-center">
+                                <h2 class="ml-lg-2">Manage all Doctors</h2>
+                                   
+                               </div>
+
+                                <div class="col-sm-6 p-0 flex justify-content-lg-end justify-content-center">
+                                <a href="#" class="btn btn-success" data-toggle="modal">
+                                <i class="material-icons">&#xE147;</i><span>Add New Doctor</span></a>
+
+                                 <a href="#" class="btn btn-danger" data-toggle="modal">
+                                <i class="material-icons">&#xE15C;</i><span>Delete</span></a>
+                                   
+                               </div>
+                           </div>
+                       </div>
+                       <table class="table table-striped table-hover">
+    <thead>
+        <tr>
+            <th>
+                <span class="custom-checkbox">
+                    <input type="checkbox" id="selectAll">
+                    <label for="selectAll"></label>
+                </span>
+            </th>
+            <th>First name</th>
+            <th>Last name</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Field</th>
+            <th>Sction</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+            <span class="custom-checkbox">
+            <input type="checkbox" id="checkbox" name="option[]" value="1">
+            <label for="checkbox"></label>
+            </span>
+            </td>
+            <td>PLacide</td>
+            <td>Nteziryayo</td>
+            <td>placide@gmail.com</td>
+            <td>07888888</td>
+            <td>Dentist</td>
+            <td>
+            <a href="#" class="edit" data-toggle="modal">
+            <i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i>
+             </a>
+            <a href="#" class="delete" data-toggle="modal">
+            <i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i>
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <span class="custom-checkbox">
+            <input type="checkbox" id="checkbox" name="option[]" value="2">
+            <label for="checkbox"></label>
+            </span>
+            </td>
+            <td>Nteziryayo</td>
+            <td>Nteziryayo</td>
+            <td>placide@gmail.com</td>
+            <td>07888888</td>
+            <td>Dentist</td>
+            <td>
+            <a href="#" class="edit" data-toggle="modal">
+            <i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i>
+             </a>
+            <a href="#" class="delete" data-toggle="modal">
+            <i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i>
+                </a>
+            </td>
+        </tr>
+        <!-- Additional table rows go here -->
+    </tbody>
+</table>
+<div class="clearfix">
+    <div class="hint-text"> Showing <b>5</b>Out of <b>25</b>      
     </div>
+    <ul class="pagination">
+        <li class="page-item disabled"> <a href="#">Previous</a></li>
+        <li class="page-item "> <a href="#" class="page-link">1</a></li>
+        <li class="page-item "> <a href="#" class="page-link">2</a></li>
+        <li class="page-item "> <a href="#" class="page-link">3</a></li>
+        <li class="page-item "> <a href="#" class="page-link">4</a></li>
+        <li class="page-item "> <a href="#" class="page-link">Next</a></li>
+    </ul>
 </div>
 
+                   </div>
+               </div>    
+           </div>
+       </div>
+
+       <!---- main content end ---->
+    
+    </div>
+
+</div>
+ <!--<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery/3.3.1/jquery.min.js"></script>
+    ---->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous"></script>
@@ -278,5 +370,7 @@
 <script src="https://cdn.jsdelivr.net/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
  
+
+
 </body>
 </html>

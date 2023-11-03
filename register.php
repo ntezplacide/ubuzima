@@ -30,21 +30,39 @@
             <div class="col-md-6">
                 <h2>Register</h2>
                 <!-- Registration Form (Bootstrap) -->
-                <form>
-                    <div class="form-group">
-                        <label for="name">Full Name</label>
-                        <input type="text" class="form-control" id="name" placeholder="Enter your full name">
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email address</label>
-                        <input type="email" class="form-control" id="email" placeholder="Enter your email">
-                    </div>
-                    <div class="form-group">
-                        <label for="password">Password</label>
-                        <input type="password" class="form-control" id="password" placeholder="Choose a password">
-                    </div>
-                    <button type="submit" class="btn btn-primary">Register</button>
-                </form>
+               <form method="POST" action="signup.php">
+    <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" class="form-control" name="name" placeholder="Enter your full name">
+    </div>
+    <div class="form-group">
+        <label for="position">Your Position</label>
+        <input type="text" class="form-control" name="position" placeholder="Enter your position">
+    </div>
+    <div class="form-group">
+        <label for="number">Phone number</label>
+        <input type="number" class="form-control" name="number" placeholder="Enter your Phone number">
+    </div>
+    <div class="form-group">
+        <label for="email">Email address</label>
+        <input type="email" class="form-control" name="email" id="email" placeholder="Enter your email">
+    </div>
+    <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" class="form-control" name="password" placeholder="Choose a password">
+    </div>
+    <div class="form-group">
+        <label for="file">Profile Image</label>
+        <input type="file" class="form-control" name="file">
+    </div>
+    <div class="form-group">
+        <label for="otp">OTP</label>
+        <input type="text" class="form-control" id="otp" name="otp" placeholder="Enter OTP">
+    </div>
+    <button type="button" class="btn btn-secondary" id="sendOTP">Send OTP</button>
+    <button type="submit" class="btn btn-primary">Register</button>
+</form>
+
                 <p>Already have an account? <a href="login.php">Login</a></p>
             </div>
             <div class="col-md-6">

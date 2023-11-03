@@ -1,12 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-    
-<meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="PLACIDE NTEZIRYAYO" content="">
+	
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
@@ -75,9 +72,10 @@
 <!-- Lodash: Utility Library -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"></script>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<!-- Include FontAwesome for icons -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Include FontAwesome for icons -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 
 
@@ -90,13 +88,11 @@
     <title>HOME</title>
 </head>
 <body>
-
-
 <div class="container-fluid">
     <div class="row">
         <!-- Sidebar -->
-          <div class="col-md-3 d-none d-md-block" style="background-color: #6D5B6D;">
-    <div id="sidebar">
+         <div id="sidebar" class="col-md-3 bg-black">
+            <div class="sidebar-header bg-green">
                 <h3>
                     <img src="img/chatter2.jpg" class="img-fluid" style="width: 49px; border-radius: 50%;"> <span>URUGERO</span>
                 </h3>
@@ -173,10 +169,10 @@
         </ul>
     </div>
 
-
-   <div class="col-md-9 col-sm-12" id="content">
+<!-- Main Content -->
+        <div id="content" class="col-md-9">
             <!-- Top Navbar -->
-            <nav class="navbar navbar-expand-lg navbar-light"  style="background-color: #6D5B6D;">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="col-2 col-md-1 col-lg-1 order-2 order-md-1 align-self-center">
                     <div class="xp-menubar">
                         <span class="material-icons text-white">signal_cellular_alt</span>
@@ -192,12 +188,11 @@
                                 </div>
                             </div>
                         </form>
-                          </div>
-                            
-                        </div>  
-                         <div class="col-10 col-md-6 col-lg-8 order-1 order-md-3">
-                            <div class="xp-profilebar text-right ">
-                                <nav class="navbar p-0">
+                    </div>
+                </div>
+                <div class="col-10 col-md-6 col-lg-8 order-1 order-md-3">
+                    <div class="xp-profilebar text-right ">
+                        <nav class="navbar p-0">
                                     <ul class="nav navbar-nav flex-row ml-auto">
                                         <li class="dropdown nav-item active">
                                            <a class="nav-link" href="#" data-toggle="dropdown">
@@ -236,40 +231,45 @@
                                         </li>
                                     </ul>
                                 </nav>
+                  </div>
+                </div>
+            </nav>
+                <div class="xp-breadcrumbbar text-center">
+                    <h4 class="page-title">Dashboard</h4>
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"> <a href="#">URUGERO</a></li>
+                        <li class="breadcrumb-item active" aria-curent="page"> DASHBOARD</li>
+                     </ol>
+                </div>
+            </div>
+       </div>
+       <!---- Main content---->
+       <div class="main-content">
+                <div class="table-wrapper">
+                    <div class="table-title">
+                        <div class="row">
+                            <div class="col-sm-6 p-0 flex justify-content-lg-start justify-content-center">
+                                <h2 class="ml-lg-2">Manage all Doctors</h2>
+                            </div>
 
-</div>
-    </div>
-  </nav>
+                            <div class="col-sm-6 p-0 flex justify-content-lg-end justify-content-center">
+                                <a href="#" class="btn btn-success" data-toggle="modal">
+                                    <i class="material-icons">&#xE147;</i><span>Add New Doctor</span>
+                                </a>
 
-  <div class="table-responsive">
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <th>#</th>
-                            <th>Column 1</th>
-                            <th>Column 2</th>
-                            <th>Column 3</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>Data 1</td>
-                            <td>Data 2</td>
-                            <td>Data 3</td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>Data 4</td>
-                            <td>Data 5</td>
-                            <td>Data 6</td>
-                        </tr>
-                    </tbody>
-                </table>
+                                <a href="#" class="btn btn-danger" data-toggle="modal">
+                                    <i class="material-icons">&#xE15C;</i><span>Delete</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
             </div>
         </div>
     </div>
 </div>
+
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   
